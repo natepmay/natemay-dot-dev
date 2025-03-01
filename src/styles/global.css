@@ -47,8 +47,8 @@ article {
 
 @layer utilities {
   article a {
-    @apply font-sans text-current underline underline-offset-2;
-    @apply decoration-black/15 dark:decoration-white/30;
+    @apply text-current underline underline-offset-[-.25em] [text-decoration-skip-ink:none];
+    @apply decoration-yellow-400/50 decoration-8 dark:decoration-white/30;
     @apply transition-colors duration-300 ease-in-out;
   }
   article a:hover {

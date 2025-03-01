@@ -1,6 +1,6 @@
 ---
 title: "My Evolution"
-description: "How I began this journey to software."
+description: "How I began this software journey."
 date: "Feb 28 2025"
 ---
 
