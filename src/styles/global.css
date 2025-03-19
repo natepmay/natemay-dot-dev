@@ -48,13 +48,13 @@ article {
 @layer utilities {
   article a {
     @apply text-current underline underline-offset-[-.25em] [text-decoration-skip-ink:none];
-    @apply decoration-yellow-400/30 decoration-8 dark:decoration-cyan-400/40;
+    @apply decoration-yellow-400/30 decoration-[0.75em] dark:decoration-cyan-400/40;
     @apply transition-all duration-300 ease-in-out;
   }
   article a:hover {
     @apply text-black dark:text-white;
     /* @apply decoration-black/25 dark:decoration-white/50; */
-    @apply decoration-[1em] underline-offset-[-.75em];
+    @apply underline-offset-[-.75em];
   }
 }
 

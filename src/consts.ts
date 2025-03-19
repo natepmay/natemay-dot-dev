@@ -11,12 +11,12 @@ export const SITE: Site = {
 export const HOME: Metadata = {
   TITLE: "Nate May",
   DESCRIPTION:
-    "I’m a product engineer, working mostly in the Typescript/React ecosystem to build full-stack applications for the web.",
+    "I’m a musician and coder working mostly in the Typescript/React ecosystem to build full-stack applications for the web.",
 };
 
 export const BLOG: Metadata = {
   TITLE: "Blog",
-  DESCRIPTION: "Some sharings of my thoughts.",
+  DESCRIPTION: "Thoughts.",
 };
 
 export const WORK: Metadata = {
@@ -32,8 +32,8 @@ export const PROJECTS: Metadata = {
 
 export const SOCIALS: Socials = [
   {
-    NAME: "bluesky (personal)",
-    HREF: "https://bsky.app/profile/natemay.bsky.social",
+    NAME: "bluesky",
+    HREF: "https://bsky.app/profile/did:plc:5vmkw5e5if7sespehv5sp7tl",
   },
   {
     NAME: "github",

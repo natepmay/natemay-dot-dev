@@ -2,6 +2,7 @@
 title: "Finfetch"
 description: "Download CSVs from all your banks at once"
 date: "Mar 1 2025"
+draft: true
 ---
 
 I run a small [online business](https://synthase.cc). Given that it's both small and online, our financial books are pretty simple, roughly summarized like this:

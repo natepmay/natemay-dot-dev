@@ -4,29 +4,29 @@ import Container from "@components/Container.astro";
 import PageLayout from "@layouts/PageLayout.astro";
 import ArrowCard from "@components/ArrowCard.astro";
 import Link from "@components/Link.astro";
-import { dateRange } from "@lib/utils";
+// import { dateRange } from "@lib/utils";
 import { SITE, HOME, SOCIALS } from "@consts";
 
-const blog = (await getCollection("blog"))
-  .filter(post => !post.data.draft)
-  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
-  .slice(0,SITE.NUM_POSTS_ON_HOMEPAGE);
+// const blog = (await getCollection("blog"))
+//   .filter(post => !post.data.draft)
+//   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+//   .slice(0,SITE.NUM_POSTS_ON_HOMEPAGE);
 
 const projects = (await getCollection("projects"))
   .filter(project => !project.data.draft)
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
   .slice(0,SITE.NUM_PROJECTS_ON_HOMEPAGE);
 
-const allwork = (await getCollection("work"))
-  .sort((a, b) => new Date(b.data.dateStart).valueOf() - new Date(a.data.dateStart).valueOf())
-  .slice(0,SITE.NUM_WORKS_ON_HOMEPAGE);
+// const allwork = (await getCollection("work"))
+//   .sort((a, b) => new Date(b.data.dateStart).valueOf() - new Date(a.data.dateStart).valueOf())
+//   .slice(0,SITE.NUM_WORKS_ON_HOMEPAGE);
 
-const work = await Promise.all(
-  allwork.map(async (item) => {
-    const { Content } = await item.render();
-    return { ...item, Content };
-  })
-);
+// const work = await Promise.all(
+//   allwork.map(async (item) => {
+//     const { Content } = await item.render();
+//     return { ...item, Content };
+//   })
+// );
 
 ---
 
@@ -39,12 +39,12 @@ const work = await Promise.all(
       <section>
         <article class="space-y-4">
           <p class="animate">
-            I’m a product engineer, mostly using Typescript/React to build full-stack applications for the web. Among the useful things I’ve built is a music Wordle-spinoff called <a href="https://chordle.synthase.cc/">Chordle</a> that has had up to 7k daily users and has been adopted in classrooms across the US. I’m the founder of <a href="https://synthase.cc/">Synthase</a>, an online school for music creators, and was one of the co-founders of the <a href="https://www.midnightoilco.com/">Midnight Oil Collective</a>, a venture studio that provides an ownership model for artists. I have a doctorate from Yale in music compostion and ten-plus years of deep experience in music and education. I live in Oakland, California.
+            I’m a musician and coder, and this site is where I share my coding work and thoughts about code. Among the useful things I’ve built is a music Wordle-spinoff called <a href="https://chordle.synthase.cc/">Chordle</a> that has had up to 7k daily users and has been adopted in classrooms across the US. I’m the founder of <a href="https://synthase.cc/">Synthase</a>, an online school for music creators. I have a doctorate from Yale in music compostion and ten-plus years of deep experience in music and education. I live in Oakland, California.
           </p>
         </article>
       </section>
 
-      <section class="animate space-y-6">
+      <!-- <section class="animate space-y-6">
         <div class="flex flex-wrap gap-y-2 items-center justify-between">
           <h4 class="font-semibold text-black dark:text-white text-xl">
             Latest posts
@@ -60,9 +60,9 @@ const work = await Promise.all(
             </li>
           ))}
         </ul>
-      </section>
+      </section> -->
 
-      <section class="animate space-y-6">
+      <!-- <section class="animate space-y-6">
         <div class="flex flex-wrap gap-y-2 items-center justify-between">
           <h4 class="font-semibold text-black dark:text-white text-xl">
             Work Experience
@@ -89,7 +89,7 @@ const work = await Promise.all(
             </li>
           ))}
         </ul>
-      </section>
+      </section> -->
 
       <section class="animate space-y-6">
         <div class="flex flex-wrap gap-y-2 items-center justify-between">
@@ -113,12 +113,6 @@ const work = await Promise.all(
         <h4 class="font-semibold text-black dark:text-white text-xl">
           Let's Connect
         </h4>
-        <article>
-          <p>
-            If you want to get in touch with me about something or just to say hi,
-            reach out on social media or send me an email.
-          </p>
-        </article>
         <ul class="flex flex-wrap gap-2">
           {SOCIALS.map(SOCIAL => (
             <li class="flex gap-x-2 text-nowrap">

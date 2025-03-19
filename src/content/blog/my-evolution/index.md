@@ -2,6 +2,7 @@
 title: "My Evolution"
 description: "How I began this software journey."
 date: "Feb 28 2025"
+draft: true
 ---
 
 A couple months ago I was clearing out old boxes in my parents’ basement when I came across this:
