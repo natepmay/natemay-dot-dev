@@ -1,6 +1,6 @@
 ---
 title: "Chordle"
-description: "A daily word game"
+description: "A daily chord game"
 date: "Mar 19 2025"
 demoURL: "https://chordle.synthase.cc"
 # repoURL: "https://github.com/markhorn-dev/astro-sphere"
