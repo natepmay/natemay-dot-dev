@@ -1,7 +1,7 @@
 ---
 title: "Chordle"
 description: "A daily chord game"
-image: "/src/content/projects/chordle/chordle.png"
+image: "/og-images/chordle.png"
 date: "Mar 19 2025"
 demoURL: "https://chordle.synthase.cc"
 # repoURL: "https://github.com/markhorn-dev/astro-sphere"
