@@ -1,6 +1,6 @@
 ---
 title: "Going Public with Synthase Studio"
-description: "Synthase Studio will house various tools for learning creative music. I've open-sourced the code so you can follow along."
+description: "I'm building an app for music learning tools."
 date: "04/11/2025"
 ---
 
