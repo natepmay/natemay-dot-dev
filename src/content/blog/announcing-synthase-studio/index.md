@@ -30,11 +30,11 @@ I see this process unfolding in phases:
   1. **Testing:** Vitest (unit) and Playwright (E2E)
   2. **Deployment:** Vercel & Neon
 
-**Phase Two:** Integrate existing child apps as `iframe`s. Handle any communication between parent and child apps via `window.postMessage()`
+**Phase Two:** Integrate existing child apps as `<iframe>`s. Handle any communication between parent and child apps via `window.postMessage()`
 
 **Phase Three:** Build out the rest of the parent app’s feature set (audio, piano, synth) and provide SDK access.
 
-**Phase Four:** Build new child apps and port the existing ones out of the `iframe`s and into a native context.
+**Phase Four:** Build new child apps and port the existing ones out of the `<iframe>`s and into a native context.
 
 ---
 
