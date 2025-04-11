@@ -3,7 +3,10 @@ title: "Going Public with Synthase Studio"
 description: "I'm building an app for music learning tools."
 date: "04/11/2025"
 tags: ["synthase-studio"]
+image: "/og-images/studio-logo-mock.png"
 ---
+
+![Synthase Studio logo](./studio-logo-mock.png)
 
 After a heretofore-lifetime of making and studying music and working as a composer and improviser, and very much despite the training I received in some of the world’s top conservatories, my professional opinion is that _music is just vibes_. As in, there are no objective rules about what makes music good. If music resonates with someone, it is good for that person. Multiply that by 8 billion and you have a universal aesthetics of music.
 
